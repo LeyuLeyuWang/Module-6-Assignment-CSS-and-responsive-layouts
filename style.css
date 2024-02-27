@@ -1,3 +1,193 @@
-*{
-    font-family: 'Roboto', Slab;
+.title {
+    font-family: "Roboto Slab", serif;
+    font-size: 10em;
+    height: 300px;
+    background-image: url("https://live-production.wcms.abc-cdn.net.au/73419a11ea13b52c6bd9c0a69c10964e?impolicy=wcms_crop_resize&cropH=1080&cropW=1918&xPos=1&yPos=0&width=862&height=485");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #8AB9B5;
+    margin: auto;
+    padding: auto;
+
+}
+
+.search {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search input[type="search"] {
+    width: 80%;
+    padding: 10px;
+}
+
+.nav nav ul {
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    border-right: 1px solid #000;
+    margin-right: 10px;
+    padding-right: 10px;
+    background-color: #8AB9B5;
+    background-size: cover;
+
+}
+
+.nav nav ul li:last-child {
+    border-right: none;
+}
+
+main {
+
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    font-size: 1.5em;
+    background-color: #FBFFF1;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.article {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.article img {
+    flex: 1;
+    object-fit: cover;
+    width: 30%;
+    align-items: center;
+}
+
+.article article {
+    flex: 2;
+}
+
+.news section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+footer {
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+    background-color: #8AB9B5;
+    background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .search {
+        width: 90%;
+    }
+
+    .search input[type="search"] {
+        width: 100%;
+    }
+
+    .nav nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .article img {
+        width: 100%;
+    }
+
+    .article article {
+        width: 100%;
+    }
+
+    .news section {
+        font-size: medium;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .search {
+        width: 70%;
+    }
+
+    .search input[type="search"] {
+        width: 90%;
+    }
+
+    .nav nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .article {
+        flex-direction: column;
+
+    }
+
+    .article img {
+        width: 60%;
+        display: block;
+        margin: auto;
+
+
+    }
+
+    .article article {
+        width: 100%;
+       
+    }
+
+    .news section {
+        font-size: large;
+        
+    }
 }
